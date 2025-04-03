@@ -1,0 +1,507 @@
+bpl-subset/bpl_subset/boost/mpl/assert.hpp:159:21: warning: unnecessary parentheses in declaration of ‘assert_not_arg’ [-Wparentheses]
+        159 | failed ************ (boost::mpl::not_<Pred>::************
+            |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        160 |       assert_not_arg( void (*)(Pred), typename assert_arg_pred_not<Pred>::type )
+            |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        161 |     );
+            |     ~
+      bpl-subset/bpl_subset/boost/mpl/assert.hpp:159:21: note: remove parentheses
+        159 | failed ************ (boost::mpl::not_<Pred>::************
+            |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            |                     -
+        160 |       assert_not_arg( void (*)(Pred), typename assert_arg_pred_not<Pred>::type )
+            |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        161 |     );
+            |     ~
+            |     -
+      In file included from bpl-subset/bpl_subset/boost/python/refcount.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/to_python_indirect.hpp:19,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/exec.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/exec.cpp:6:
+      bpl-subset/bpl_subset/boost/python/cast.hpp: In function ‘void pycudaboost::python::detail::assert_castable(pycudaboost::type<T>*)’:
+      bpl-subset/bpl_subset/boost/python/cast.hpp:73:20: warning: typedef ‘must_be_a_complete_type’ locally defined but not used [-Wunused-local-typedefs]
+         73 |       typedef char must_be_a_complete_type[sizeof(T)];
+            |                    ^~~~~~~~~~~~~~~~~~~~~~~
+      In file included from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/exec.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/exec.cpp:6:
+      bpl-subset/bpl_subset/boost/python/to_python_indirect.hpp: In static member function ‘static PyObject* pycudaboost::python::detail::make_owning_holder::execute(T*)’:
+      bpl-subset/bpl_subset/boost/python/to_python_indirect.hpp:90:24: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+         90 |           typedef std::auto_ptr<T> smart_pointer;
+            |                        ^~~~~~~~
+      In file included from /usr/include/c++/11/memory:76,
+                       from bpl-subset/bpl_subset/boost/config/no_tr1/memory.hpp:21,
+                       from bpl-subset/bpl_subset/boost/get_pointer.hpp:12,
+                       from bpl-subset/bpl_subset/boost/python/object/pointer_holder.hpp:11,
+                       from bpl-subset/bpl_subset/boost/python/to_python_indirect.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/exec.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/exec.cpp:6:
+      /usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+         57 |   template<typename> class auto_ptr;
+            |                            ^~~~~~~~
+      In file included from bpl-subset/bpl_subset/boost/smart_ptr/shared_ptr.hpp:32,
+                       from bpl-subset/bpl_subset/boost/shared_ptr.hpp:17,
+                       from bpl-subset/bpl_subset/boost/python/converter/shared_ptr_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/exec.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/exec.cpp:6:
+      bpl-subset/bpl_subset/boost/smart_ptr/detail/shared_count.hpp: At global scope:
+      bpl-subset/bpl_subset/boost/smart_ptr/detail/shared_count.hpp:284:33: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+        284 |     explicit shared_count( std::auto_ptr<Y> & r ): pi_( new sp_counted_impl_p<Y>( r.get() ) )
+            |                                 ^~~~~~~~
+      In file included from /usr/include/c++/11/memory:76,
+                       from bpl-subset/bpl_subset/boost/config/no_tr1/memory.hpp:21,
+                       from bpl-subset/bpl_subset/boost/get_pointer.hpp:12,
+                       from bpl-subset/bpl_subset/boost/python/object/pointer_holder.hpp:11,
+                       from bpl-subset/bpl_subset/boost/python/to_python_indirect.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/exec.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/exec.cpp:6:
+      /usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+         57 |   template<typename> class auto_ptr;
+            |                            ^~~~~~~~
+      In file included from bpl-subset/bpl_subset/boost/shared_ptr.hpp:17,
+                       from bpl-subset/bpl_subset/boost/python/converter/shared_ptr_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/exec.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/exec.cpp:6:
+      bpl-subset/bpl_subset/boost/smart_ptr/shared_ptr.hpp:146:65: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+        146 | template< class T, class R > struct sp_enable_if_auto_ptr< std::auto_ptr< T >, R >
+            |                                                                 ^~~~~~~~
+      In file included from /usr/include/c++/11/memory:76,
+                       from bpl-subset/bpl_subset/boost/config/no_tr1/memory.hpp:21,
+                       from bpl-subset/bpl_subset/boost/get_pointer.hpp:12,
+                       from bpl-subset/bpl_subset/boost/python/object/pointer_holder.hpp:11,
+                       from bpl-subset/bpl_subset/boost/python/to_python_indirect.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/exec.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/exec.cpp:6:
+      /usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+         57 |   template<typename> class auto_ptr;
+            |                            ^~~~~~~~
+      In file included from bpl-subset/bpl_subset/boost/shared_ptr.hpp:17,
+                       from bpl-subset/bpl_subset/boost/python/converter/shared_ptr_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/exec.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/exec.cpp:6:
+      bpl-subset/bpl_subset/boost/smart_ptr/shared_ptr.hpp:285:30: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+        285 |     explicit shared_ptr(std::auto_ptr<Y> & r): px(r.get()), pn()
+            |                              ^~~~~~~~
+      In file included from /usr/include/c++/11/memory:76,
+                       from bpl-subset/bpl_subset/boost/config/no_tr1/memory.hpp:21,
+                       from bpl-subset/bpl_subset/boost/get_pointer.hpp:12,
+                       from bpl-subset/bpl_subset/boost/python/object/pointer_holder.hpp:11,
+                       from bpl-subset/bpl_subset/boost/python/to_python_indirect.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/exec.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/exec.cpp:6:
+      /usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+         57 |   template<typename> class auto_ptr;
+            |                            ^~~~~~~~
+      In file included from bpl-subset/bpl_subset/boost/shared_ptr.hpp:17,
+                       from bpl-subset/bpl_subset/boost/python/converter/shared_ptr_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/exec.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/exec.cpp:6:
+      bpl-subset/bpl_subset/boost/smart_ptr/shared_ptr.hpp:329:34: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+        329 |     shared_ptr & operator=( std::auto_ptr<Y> & r )
+            |                                  ^~~~~~~~
+      In file included from /usr/include/c++/11/memory:76,
+                       from bpl-subset/bpl_subset/boost/config/no_tr1/memory.hpp:21,
+                       from bpl-subset/bpl_subset/boost/get_pointer.hpp:12,
+                       from bpl-subset/bpl_subset/boost/python/object/pointer_holder.hpp:11,
+                       from bpl-subset/bpl_subset/boost/python/to_python_indirect.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/exec.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/exec.cpp:6:
+      /usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+         57 |   template<typename> class auto_ptr;
+            |                            ^~~~~~~~
+      In file included from bpl-subset/bpl_subset/boost/python/detail/invoke.hpp:21,
+                       from bpl-subset/bpl_subset/boost/python/detail/caller.hpp:16,
+                       from bpl-subset/bpl_subset/boost/python/object/function_handle.hpp:8,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:19,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/exec.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/exec.cpp:6:
+      bpl-subset/bpl_subset/boost/python/to_python_value.hpp: In member function ‘PyObject* pycudaboost::python::detail::registry_to_python_value<T>::operator()(pycudaboost::python::detail::registry_to_python_value<T>::argument_type) const’:
+      bpl-subset/bpl_subset/boost/python/to_python_value.hpp:150:52: warning: typedef ‘r’ locally defined but not used [-Wunused-local-typedefs]
+        150 |       typedef converter::registered<argument_type> r;
+            |                                                    ^
+      In file included from bpl-subset/bpl_subset/boost/python/object/function_handle.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:19,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/exec.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/exec.cpp:6:
+      bpl-subset/bpl_subset/boost/python/object/py_function.hpp: At global scope:
+      bpl-subset/bpl_subset/boost/python/object/py_function.hpp:167:18: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+        167 |     mutable std::auto_ptr<py_function_impl_base> m_impl;
+            |                  ^~~~~~~~
+      In file included from /usr/include/c++/11/memory:76,
+                       from bpl-subset/bpl_subset/boost/config/no_tr1/memory.hpp:21,
+                       from bpl-subset/bpl_subset/boost/get_pointer.hpp:12,
+                       from bpl-subset/bpl_subset/boost/python/object/pointer_holder.hpp:11,
+                       from bpl-subset/bpl_subset/boost/python/to_python_indirect.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/exec.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/exec.cpp:6:
+      /usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+         57 |   template<typename> class auto_ptr;
+            |                            ^~~~~~~~
+      aarch64-linux-gnu-g++ -Wno-unused-result -Wsign-compare -fwrapv -Wall -O3 -DNDEBUG -fPIC -DBOOST_ALL_NO_LIB=1 -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_MULTI_INDEX_DISABLE_SERIALIZATION=1 -DBOOST_PYTHON_SOURCE=1 -Dboost=pycudaboost -DBOOST_THREAD_DONT_USE_CHRONO=1 -DPYGPU_PACKAGE=pycuda -DPYGPU_PYCUDA=1 -DHAVE_CURAND=1 -Isrc/cpp -Ibpl-subset/bpl_subset -I/tmp/pip-build-env-9x5wtr5l/overlay/local/lib/python3.10/dist-packages/numpy/_core/include -I/usr/include/python3.10 -c bpl-subset/bpl_subset/libs/python/src/import.cpp -o build/temp.linux-aarch64-cpython-310/bpl-subset/bpl_subset/libs/python/src/import.o
+      In file included from bpl-subset/bpl_subset/boost/python/object/pointer_holder.hpp:11,
+                       from bpl-subset/bpl_subset/boost/python/to_python_indirect.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/import.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/import.cpp:6:
+      bpl-subset/bpl_subset/boost/get_pointer.hpp:25:40: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+         25 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+            |                                        ^~~~~~~~
+      In file included from /usr/include/c++/11/memory:76,
+                       from bpl-subset/bpl_subset/boost/config/no_tr1/memory.hpp:21,
+                       from bpl-subset/bpl_subset/boost/get_pointer.hpp:12,
+                       from bpl-subset/bpl_subset/boost/python/object/pointer_holder.hpp:11,
+                       from bpl-subset/bpl_subset/boost/python/to_python_indirect.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/import.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/import.cpp:6:
+      /usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+         57 |   template<typename> class auto_ptr;
+            |                            ^~~~~~~~
+      In file included from bpl-subset/bpl_subset/boost/python/detail/is_xxx.hpp:8,
+                       from bpl-subset/bpl_subset/boost/python/detail/is_auto_ptr.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/detail/copy_ctor_mutates_rhs.hpp:8,
+                       from bpl-subset/bpl_subset/boost/python/detail/value_arg.hpp:7,
+                       from bpl-subset/bpl_subset/boost/python/object/forward.hpp:13,
+                       from bpl-subset/bpl_subset/boost/python/object/pointer_holder.hpp:16,
+                       from bpl-subset/bpl_subset/boost/python/to_python_indirect.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/import.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/import.cpp:6:
+      bpl-subset/bpl_subset/boost/python/detail/is_auto_ptr.hpp:17:40: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+         17 | BOOST_PYTHON_IS_XXX_DEF(auto_ptr, std::auto_ptr, 1)
+            |                                        ^~~~~~~~
+      bpl-subset/bpl_subset/boost/detail/is_xxx.hpp:53:4: note: in definition of macro ‘BOOST_DETAIL_IS_XXX_DEF’
+         53 |    qualified_name< BOOST_PP_ENUM_PARAMS_Z(1, nargs, T) >        \
+            |    ^~~~~~~~~~~~~~
+      bpl-subset/bpl_subset/boost/python/detail/is_auto_ptr.hpp:17:1: note: in expansion of macro ‘BOOST_PYTHON_IS_XXX_DEF’
+         17 | BOOST_PYTHON_IS_XXX_DEF(auto_ptr, std::auto_ptr, 1)
+            | ^~~~~~~~~~~~~~~~~~~~~~~
+      In file included from /usr/include/c++/11/memory:76,
+                       from bpl-subset/bpl_subset/boost/config/no_tr1/memory.hpp:21,
+                       from bpl-subset/bpl_subset/boost/get_pointer.hpp:12,
+                       from bpl-subset/bpl_subset/boost/python/object/pointer_holder.hpp:11,
+                       from bpl-subset/bpl_subset/boost/python/to_python_indirect.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/import.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/import.cpp:6:
+      /usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+         57 |   template<typename> class auto_ptr;
+            |                            ^~~~~~~~
+      In file included from bpl-subset/bpl_subset/boost/mpl/aux_/na_assert.hpp:23,
+                       from bpl-subset/bpl_subset/boost/mpl/arg.hpp:25,
+                       from bpl-subset/bpl_subset/boost/mpl/placeholders.hpp:24,
+                       from bpl-subset/bpl_subset/boost/mpl/apply.hpp:24,
+                       from bpl-subset/bpl_subset/boost/python/object/pointer_holder.hpp:27,
+                       from bpl-subset/bpl_subset/boost/python/to_python_indirect.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/import.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/import.cpp:6:
+      bpl-subset/bpl_subset/boost/mpl/assert.hpp:154:21: warning: unnecessary parentheses in declaration of ‘assert_arg’ [-Wparentheses]
+        154 | failed ************ (Pred::************
+            |                     ^~~~~~~~~~~~~~~~~~~
+        155 |       assert_arg( void (*)(Pred), typename assert_arg_pred<Pred>::type )
+            |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        156 |     );
+            |     ~
+      bpl-subset/bpl_subset/boost/mpl/assert.hpp:154:21: note: remove parentheses
+        154 | failed ************ (Pred::************
+            |                     ^~~~~~~~~~~~~~~~~~~
+            |                     -
+        155 |       assert_arg( void (*)(Pred), typename assert_arg_pred<Pred>::type )
+            |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        156 |     );
+            |     ~
+            |     -
+      bpl-subset/bpl_subset/boost/mpl/assert.hpp:159:21: warning: unnecessary parentheses in declaration of ‘assert_not_arg’ [-Wparentheses]
+        159 | failed ************ (boost::mpl::not_<Pred>::************
+            |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        160 |       assert_not_arg( void (*)(Pred), typename assert_arg_pred_not<Pred>::type )
+            |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        161 |     );
+            |     ~
+      bpl-subset/bpl_subset/boost/mpl/assert.hpp:159:21: note: remove parentheses
+        159 | failed ************ (boost::mpl::not_<Pred>::************
+            |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            |                     -
+        160 |       assert_not_arg( void (*)(Pred), typename assert_arg_pred_not<Pred>::type )
+            |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        161 |     );
+            |     ~
+            |     -
+      In file included from bpl-subset/bpl_subset/boost/python/refcount.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/to_python_indirect.hpp:19,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/import.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/import.cpp:6:
+      bpl-subset/bpl_subset/boost/python/cast.hpp: In function ‘void pycudaboost::python::detail::assert_castable(pycudaboost::type<T>*)’:
+      bpl-subset/bpl_subset/boost/python/cast.hpp:73:20: warning: typedef ‘must_be_a_complete_type’ locally defined but not used [-Wunused-local-typedefs]
+         73 |       typedef char must_be_a_complete_type[sizeof(T)];
+            |                    ^~~~~~~~~~~~~~~~~~~~~~~
+      In file included from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/import.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/import.cpp:6:
+      bpl-subset/bpl_subset/boost/python/to_python_indirect.hpp: In static member function ‘static PyObject* pycudaboost::python::detail::make_owning_holder::execute(T*)’:
+      bpl-subset/bpl_subset/boost/python/to_python_indirect.hpp:90:24: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+         90 |           typedef std::auto_ptr<T> smart_pointer;
+            |                        ^~~~~~~~
+      In file included from /usr/include/c++/11/memory:76,
+                       from bpl-subset/bpl_subset/boost/config/no_tr1/memory.hpp:21,
+                       from bpl-subset/bpl_subset/boost/get_pointer.hpp:12,
+                       from bpl-subset/bpl_subset/boost/python/object/pointer_holder.hpp:11,
+                       from bpl-subset/bpl_subset/boost/python/to_python_indirect.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/import.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/import.cpp:6:
+      /usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+         57 |   template<typename> class auto_ptr;
+            |                            ^~~~~~~~
+      In file included from bpl-subset/bpl_subset/boost/smart_ptr/shared_ptr.hpp:32,
+                       from bpl-subset/bpl_subset/boost/shared_ptr.hpp:17,
+                       from bpl-subset/bpl_subset/boost/python/converter/shared_ptr_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/import.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/import.cpp:6:
+      bpl-subset/bpl_subset/boost/smart_ptr/detail/shared_count.hpp: At global scope:
+      bpl-subset/bpl_subset/boost/smart_ptr/detail/shared_count.hpp:284:33: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+        284 |     explicit shared_count( std::auto_ptr<Y> & r ): pi_( new sp_counted_impl_p<Y>( r.get() ) )
+            |                                 ^~~~~~~~
+      In file included from /usr/include/c++/11/memory:76,
+                       from bpl-subset/bpl_subset/boost/config/no_tr1/memory.hpp:21,
+                       from bpl-subset/bpl_subset/boost/get_pointer.hpp:12,
+                       from bpl-subset/bpl_subset/boost/python/object/pointer_holder.hpp:11,
+                       from bpl-subset/bpl_subset/boost/python/to_python_indirect.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/import.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/import.cpp:6:
+      /usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+         57 |   template<typename> class auto_ptr;
+            |                            ^~~~~~~~
+      In file included from bpl-subset/bpl_subset/boost/shared_ptr.hpp:17,
+                       from bpl-subset/bpl_subset/boost/python/converter/shared_ptr_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/import.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/import.cpp:6:
+      bpl-subset/bpl_subset/boost/smart_ptr/shared_ptr.hpp:146:65: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+        146 | template< class T, class R > struct sp_enable_if_auto_ptr< std::auto_ptr< T >, R >
+            |                                                                 ^~~~~~~~
+      In file included from /usr/include/c++/11/memory:76,
+                       from bpl-subset/bpl_subset/boost/config/no_tr1/memory.hpp:21,
+                       from bpl-subset/bpl_subset/boost/get_pointer.hpp:12,
+                       from bpl-subset/bpl_subset/boost/python/object/pointer_holder.hpp:11,
+                       from bpl-subset/bpl_subset/boost/python/to_python_indirect.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/import.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/import.cpp:6:
+      /usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+         57 |   template<typename> class auto_ptr;
+            |                            ^~~~~~~~
+      In file included from bpl-subset/bpl_subset/boost/shared_ptr.hpp:17,
+                       from bpl-subset/bpl_subset/boost/python/converter/shared_ptr_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/import.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/import.cpp:6:
+      bpl-subset/bpl_subset/boost/smart_ptr/shared_ptr.hpp:285:30: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+        285 |     explicit shared_ptr(std::auto_ptr<Y> & r): px(r.get()), pn()
+            |                              ^~~~~~~~
+      In file included from /usr/include/c++/11/memory:76,
+                       from bpl-subset/bpl_subset/boost/config/no_tr1/memory.hpp:21,
+                       from bpl-subset/bpl_subset/boost/get_pointer.hpp:12,
+                       from bpl-subset/bpl_subset/boost/python/object/pointer_holder.hpp:11,
+                       from bpl-subset/bpl_subset/boost/python/to_python_indirect.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/import.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/import.cpp:6:
+      /usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+         57 |   template<typename> class auto_ptr;
+            |                            ^~~~~~~~
+      In file included from bpl-subset/bpl_subset/boost/shared_ptr.hpp:17,
+                       from bpl-subset/bpl_subset/boost/python/converter/shared_ptr_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/import.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/import.cpp:6:
+      bpl-subset/bpl_subset/boost/smart_ptr/shared_ptr.hpp:329:34: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+        329 |     shared_ptr & operator=( std::auto_ptr<Y> & r )
+            |                                  ^~~~~~~~
+      In file included from /usr/include/c++/11/memory:76,
+                       from bpl-subset/bpl_subset/boost/config/no_tr1/memory.hpp:21,
+                       from bpl-subset/bpl_subset/boost/get_pointer.hpp:12,
+                       from bpl-subset/bpl_subset/boost/python/object/pointer_holder.hpp:11,
+                       from bpl-subset/bpl_subset/boost/python/to_python_indirect.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/import.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/import.cpp:6:
+      /usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+         57 |   template<typename> class auto_ptr;
+            |                            ^~~~~~~~
+      In file included from bpl-subset/bpl_subset/boost/python/detail/invoke.hpp:21,
+                       from bpl-subset/bpl_subset/boost/python/detail/caller.hpp:16,
+                       from bpl-subset/bpl_subset/boost/python/object/function_handle.hpp:8,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:19,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/import.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/import.cpp:6:
+      bpl-subset/bpl_subset/boost/python/to_python_value.hpp: In member function ‘PyObject* pycudaboost::python::detail::registry_to_python_value<T>::operator()(pycudaboost::python::detail::registry_to_python_value<T>::argument_type) const’:
+      bpl-subset/bpl_subset/boost/python/to_python_value.hpp:150:52: warning: typedef ‘r’ locally defined but not used [-Wunused-local-typedefs]
+        150 |       typedef converter::registered<argument_type> r;
+            |                                                    ^
+      In file included from bpl-subset/bpl_subset/boost/python/object/function_handle.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:19,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/import.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/import.cpp:6:
+      bpl-subset/bpl_subset/boost/python/object/py_function.hpp: At global scope:
+      bpl-subset/bpl_subset/boost/python/object/py_function.hpp:167:18: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+        167 |     mutable std::auto_ptr<py_function_impl_base> m_impl;
+            |                  ^~~~~~~~
+      In file included from /usr/include/c++/11/memory:76,
+                       from bpl-subset/bpl_subset/boost/config/no_tr1/memory.hpp:21,
+                       from bpl-subset/bpl_subset/boost/get_pointer.hpp:12,
+                       from bpl-subset/bpl_subset/boost/python/object/pointer_holder.hpp:11,
+                       from bpl-subset/bpl_subset/boost/python/to_python_indirect.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/import.hpp:8,
+                       from bpl-subset/bpl_subset/libs/python/src/import.cpp:6:
+      /usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+         57 |   template<typename> class auto_ptr;
+            |                            ^~~~~~~~
+      aarch64-linux-gnu-g++ -Wno-unused-result -Wsign-compare -fwrapv -Wall -O3 -DNDEBUG -fPIC -DBOOST_ALL_NO_LIB=1 -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_MULTI_INDEX_DISABLE_SERIALIZATION=1 -DBOOST_PYTHON_SOURCE=1 -Dboost=pycudaboost -DBOOST_THREAD_DONT_USE_CHRONO=1 -DPYGPU_PACKAGE=pycuda -DPYGPU_PYCUDA=1 -DHAVE_CURAND=1 -Isrc/cpp -Ibpl-subset/bpl_subset -I/tmp/pip-build-env-9x5wtr5l/overlay/local/lib/python3.10/dist-packages/numpy/_core/include -I/usr/include/python3.10 -c bpl-subset/bpl_subset/libs/python/src/list.cpp -o build/temp.linux-aarch64-cpython-310/bpl-subset/bpl_subset/libs/python/src/list.o
+      In file included from bpl-subset/bpl_subset/boost/python/object/pointer_holder.hpp:11,
+                       from bpl-subset/bpl_subset/boost/python/to_python_indirect.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/list.hpp:10,
+                       from bpl-subset/bpl_subset/libs/python/src/list.cpp:5:
+      bpl-subset/bpl_subset/boost/get_pointer.hpp:25:40: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+         25 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+            |                                        ^~~~~~~~
+      In file included from /usr/include/c++/11/memory:76,
+                       from bpl-subset/bpl_subset/boost/config/no_tr1/memory.hpp:21,
+                       from bpl-subset/bpl_subset/boost/get_pointer.hpp:12,
+                       from bpl-subset/bpl_subset/boost/python/object/pointer_holder.hpp:11,
+                       from bpl-subset/bpl_subset/boost/python/to_python_indirect.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/converter/arg_to_python.hpp:10,
+                       from bpl-subset/bpl_subset/boost/python/call.hpp:15,
+                       from bpl-subset/bpl_subset/boost/python/object_core.hpp:14,
+                       from bpl-subset/bpl_subset/boost/python/object.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/list.hpp:10,
+                       from bpl-subset/bpl_subset/libs/python/src/list.cpp:5:
+      /usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+         57 |   template<typename> class auto_ptr;
+            |                            ^~~~~~~~
+      In file included from bpl-subset/bpl_subset/boost/python/detail/is_xxx.hpp:8,
+                       from bpl-subset/bpl_subset/boost/python/detail/is_auto_ptr.hpp:9,
+                       from bpl-subset/bpl_subset/boost/python/detail/copy_ctor_mutates_rhs.hpp:8,
+                       from bpl-subset/bpl_subset/boost/python/detail/value_arg.hpp:7,
+                       from bpl-subset/bpl_subset/boost/python/object/forward.hpp:13,
+                       from bpl-subset/bpl_subset/boost/python/object/pointer_holder.hpp:16,
+                       from bpl-subset/bpl_subse
